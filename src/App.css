@@ -1,0 +1,107 @@
+/* 应用主容器样式 */
+.app {
+  min-height: 100vh;        /* 最小高度设为视口高度 */
+  display: flex;             /* 使用弹性布局 */
+  flex-direction: column;    /* 垂直方向排列子元素 */
+}
+
+/* 应用头部样式 */
+.app-header {
+  background: rgba(255, 255, 255, 0.1);                    /* 半透明白色背景 */
+  backdrop-filter: blur(10px);                               /* 背景模糊效果 */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);        /* 底部半透明白色边框 */
+  padding: 1rem 2rem;                                        /* 内边距：上下1rem，左右2rem */
+  display: flex;                                              /* 使用弹性布局 */
+  justify-content: space-between;                             /* 子元素两端对齐 */
+  align-items: center;                                        /* 子元素垂直居中对齐 */
+}
+
+/* 应用标题样式 */
+.app-title {
+  color: white;           /* 白色文字 */
+  font-size: 1.5rem;      /* 字体大小1.5rem */
+  font-weight: bold;      /* 粗体字 */
+  margin: 0;              /* 无外边距 */
+}
+
+/* 应用内容区域样式 */
+.app-content {
+  flex: 1;                /* 占据剩余空间 */
+  padding: 2rem;          /* 内边距2rem */
+  display: flex;           /* 使用弹性布局 */
+  justify-content: center; /* 水平居中对齐 */
+  align-items: flex-start; /* 顶部对齐 */
+}
+
+/* 卡片容器样式 */
+.card-container {
+  background: white;                                        /* 白色背景 */
+  border-radius: 20px;                                      /* 圆角边框20px */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);             /* 阴影效果：偏移20px，模糊40px，半透明黑色 */
+  padding: 3rem;                                            /* 内边距3rem */
+  max-width: 600px;                                         /* 最大宽度600px */
+  width: 100%;                                              /* 宽度100% */
+  text-align: center;                                       /* 文字居中对齐 */
+}
+
+/* 句子卡片样式 */
+.sentence-card {
+  background: white;                                        /* 白色背景 */
+  border-radius: 15px;                                      /* 圆角边框15px */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);             /* 阴影效果：偏移10px，模糊30px，半透明黑色 */
+  padding: 2rem;                                            /* 内边距2rem */
+  margin: 1rem 0;                                           /* 外边距：上下1rem，左右0 */
+  transition: transform 0.3s ease;                          /* 变换动画：0.3秒缓动效果 */
+}
+
+/* 句子卡片悬停效果 */
+.sentence-card:hover {
+  transform: translateY(-5px);                              /* 悬停时向上移动5px */
+}
+
+/* 句子文本样式 */
+.sentence-text {
+  font-size: 1.5rem;        /* 字体大小1.5rem */
+  color: #333;               /* 深灰色文字 */
+  margin-bottom: 1rem;       /* 底部外边距1rem */
+  line-height: 1.6;          /* 行高1.6倍 */
+}
+
+/* 句子翻译样式 */
+.sentence-translation {
+  font-size: 1.1rem;        /* 字体大小1.1rem */
+  color: #666;               /* 中灰色文字 */
+  margin-bottom: 1.5rem;     /* 底部外边距1.5rem */
+}
+
+/* 按钮组样式 */
+.button-group {
+  display: flex;             /* 使用弹性布局 */
+  gap: 1rem;                 /* 按钮之间的间距1rem */
+  justify-content: center;   /* 水平居中对齐 */
+  margin-top: 2rem;          /* 顶部外边距2rem */
+}
+
+/* Ant Design按钮样式覆盖 */
+.ant-btn {
+  border-radius: 25px;       /* 圆角边框25px */
+  padding: 0.5rem 2rem;      /* 内边距：上下0.5rem，左右2rem */
+  font-weight: 500;          /* 字体粗细500 */
+}
+
+/* 进度条容器样式 */
+.progress-bar {
+  width: 100%;               /* 宽度100% */
+  height: 8px;               /* 高度8px */
+  background: #f0f0f0;       /* 浅灰色背景 */
+  border-radius: 4px;        /* 圆角边框4px */
+  overflow: hidden;          /* 隐藏溢出内容 */
+  margin: 1rem 0;            /* 外边距：上下1rem，左右0 */
+}
+
+/* 进度条填充样式 */
+.progress-fill {
+  height: 100%;              /* 高度100% */
+  background: linear-gradient(90deg, #667eea, #764ba2); /* 渐变背景：从左到右，蓝色到紫色 */
+  transition: width 0.3s ease; /* 宽度变化动画：0.3秒缓动效果 */
+} 
