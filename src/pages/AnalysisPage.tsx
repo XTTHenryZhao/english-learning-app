@@ -9,49 +9,50 @@ const { Title, Paragraph, Text } = Typography;
 
 
 
-interface SentenceStructure {
-  mainClause: string;
-  subordinateClauses: SubordinateClause[];
-  phrases: Phrase[];
-  words: Word[];
-}
+// 这些接口暂时未使用，但保留以备将来扩展功能
+// interface SentenceStructure {
+//   mainClause: string;
+//   subordinateClauses: SubordinateClause[];
+//   phrases: Phrase[];
+//   words: Word[];
+// }
 
-interface SubordinateClause {
-  type: string;
-  content: string;
-  function: string;
-  connector: string;
-}
+// interface SubordinateClause {
+//   type: string;
+//   content: string;
+//   function: string;
+//   connector: string;
+// }
 
-interface Phrase {
-  type: string;
-  content: string;
-  function: string;
-}
+// interface Phrase {
+//   type: string;
+//   content: string;
+//   function: string;
+// }
 
-interface Word {
-  word: string;
-  partOfSpeech: string;
-  function: string;
-}
+// interface Word {
+//   word: string;
+//   partOfSpeech: string;
+//   function: string;
+// }
 
-interface LogicRelation {
-  type: string;
-  description: string;
-  examples: string[];
-}
+// interface LogicRelation {
+//   type: string;
+//   description: string;
+//   examples: string[];
+// }
 
-interface SimilarPattern {
-  pattern: string;
-  examples: string[];
-  usage: string;
-}
+// interface SimilarPattern {
+//   pattern: string;
+//   examples: string[];
+//   usage: string;
+// }
 
-interface GrammarPoint {
-  point: string;
-  explanation: string;
-  examples: string[];
-}
+// interface GrammarPoint {
+//   point: string;
+//   explanation: string;
+//   examples: string[];
+// }
 
 const AnalysisPage: React.FC = () => {
   const navigate = useNavigate();
