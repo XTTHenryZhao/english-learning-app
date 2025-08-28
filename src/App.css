@@ -104,4 +104,46 @@
   height: 100%;              /* 高度100% */
   background: linear-gradient(90deg, #667eea, #764ba2); /* 渐变背景：从左到右，蓝色到紫色 */
   transition: width 0.3s ease; /* 宽度变化动画：0.3秒缓动效果 */
+}
+
+/* 作者二维码浮动样式 */
+.author-qr {
+  position: fixed;
+  top: 40%;
+  z-index: 9999;
+  display: block;
+  width: 120px;
+  height: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.author-qr img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  background: #fff;
+}
+.author-qr .label {
+  display: block;
+  margin-top: 8px;
+  padding: 4px 6px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+  background: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.author-qr.left { left: 56px; }
+.author-qr.right { right: 56px; }
+.author-qr:hover { opacity: 1; transform: translateY(-2px); }
+
+@media (max-width: 768px) {
+  .author-qr { width: 88px; top: unset; bottom: 80px; }
+  .author-qr .label { font-size: 11px; }
+  .author-qr.left { left: 12px; }
+  .author-qr.right { right: 12px; }
 } 

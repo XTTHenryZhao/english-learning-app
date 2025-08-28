@@ -23,6 +23,7 @@ import GlobalReminder from './components/GlobalReminder.tsx';
 // 导入应用的样式文件
 import './App.css';
 import { useStore } from './store/useStore.ts';
+import AuthorQR from './components/AuthorQR.tsx';
 
 // 主应用组件：定义整个应用的路由结构和全局配置
 const App: React.FC = () => {
@@ -37,6 +38,8 @@ const App: React.FC = () => {
       <Router>
         {/* 应用的主容器 */}
         <div className="app">
+          {/* 作者二维码浮动组件 */}
+          <AuthorQR />
           {/* 定义应用的路由规则 */}
           <Routes>
             {/* 首页路由 - 访问根路径时显示 */}
